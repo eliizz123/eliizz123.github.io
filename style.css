@@ -23,7 +23,7 @@ body {
 
 /* Navbar */
 nav {
-    background-color: rgba(0, 0, 0, 0.7); /* Warna gelap transparan */
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 15px;
     font-family: "Garamond", serif;
 }
@@ -41,12 +41,25 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+/* Content Sections */
+.content-section {
+    display: none;
+    padding: 20px;
+}
+
+/* Show the active section */
+.active {
+    display: block;
+}
+
 
 /* Hero Section */
 .hero {
