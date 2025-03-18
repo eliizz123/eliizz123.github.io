@@ -20,6 +20,7 @@ nav {
 
 nav ul {
     list-style: none;
+    font:Garamont;
     display: flex;
     justify-content: center;
 }
