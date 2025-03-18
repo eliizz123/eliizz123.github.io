@@ -5,36 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <!-- Navbar -->
     <nav>
         <ul>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">Web</a></li>
-            <li><a href="#">Data</a></li>
-            <li><a href="#">Other Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" onclick="showSection('games')">Games</a></li>
+            <li><a href="#" onclick="showSection('web')">Web</a></li>
+            <li><a href="#" onclick="showSection('data')">Data</a></li>
+            <li><a href="#" onclick="showSection('other')">Other Projects</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (Tetap Tampil di Awal) -->
     <section class="hero">
         <div class="profile">
             <img src="profile.jpg" alt="My Profile">
         </div>
         <div class="about">
-            <h1>Elizabeth Isabella</h1>
-            <p>Hi! I'm Eliz, a passionate coder. I specialize in Python, SQL, and Web Development.</p>
+            <h1>Eliizz</h1>
+            <p>Hi! I'm Eliizz, a passionate coder. I specialize in Python, SQL, and Web Development.</p>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="projects">
-        <h2>My Projects</h2>
-
-        <!-- Games -->
-        <h3>🎮 Games</h3>
+    <section id="games" class="content-section">
+        <h2>🎮 Games</h2>
         <div class="project-grid">
             <div class="project">
                 <h3>Game 1</h3>
@@ -44,27 +42,26 @@
                 <h3>Game 2</h3>
                 <p>Description of Game 2.</p>
             </div>
-            <div class="project">
-                <h3>Game 3</h3>
-                <p>Description of Game 3.</p>
-            </div>
         </div>
+    </section>
 
-        <!-- Web Projects -->
-        <h3>🌐 Web Development</h3>
+    <section id="web" class="content-section">
+        <h2>🌐 Web Development</h2>
         <div class="project-grid">
             <div class="project">
                 <h3>Website 1</h3>
                 <p>Description of Website 1.</p>
             </div>
         </div>
+    </section>
 
-        <!-- Data Projects (Belum Jadi) -->
-        <h3>📊 Data Projects</h3>
+    <section id="data" class="content-section">
+        <h2>📊 Data Projects</h2>
         <p>Coming soon...</p>
+    </section>
 
-        <!-- Other Projects -->
-        <h3>🔧 Other Projects</h3>
+    <section id="other" class="content-section">
+        <h2>🔧 Other Projects</h2>
         <div class="project-grid">
             <div class="project">
                 <h3>Project X</h3>
@@ -73,9 +70,14 @@
         </div>
     </section>
 
+    <section id="contact" class="content-section">
+        <h2>📩 Contact</h2>
+        <p>Contact me at <a href="mailto:tata04072002@gmail.com">tata04072002@gmail.com</a></p>
+    </section>
+
     <!-- Footer -->
     <footer>
-        <p>Contact me at <a href="mailto:tata04072002@gmail.com">tata04072002@gmail.com</a></p>
+        <p>Copyright © 2025 Eliizz</p>
     </footer>
 </body>
 </html>
