@@ -7,12 +7,24 @@ body {
     background-size: cover;
     text-align: center;
 }
+/* Reset default margin & padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
 
 /* Navbar */
 nav {
-    background-color: rgba(0, 0, 0, 0.7); /* Warna gelap transparan */
+    background-color: #333;
     padding: 15px;
-    font-family: "Garamond", serif;
 }
 
 nav ul {
@@ -29,9 +41,55 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.about {
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Projects Section */
+.projects {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
 }
